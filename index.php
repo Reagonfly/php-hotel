@@ -78,7 +78,7 @@ function park($hotels)
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>php-hotel</title>
+    <title>PhP-hotel</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -116,31 +116,31 @@ function park($hotels)
                     </thead>
                     <tbody>
                         <?php foreach (park($hotels) as $hotel) { ?>
-                        <tr>
-                            <td>
-                                <p><?php echo $hotel['name']; ?></p>
-                            </td>
-                            <td>
-                                <p><?php echo $hotel['description']; ?></p>
-                            </td>
-                            <td>
-                                <p>
-                                    <?php
-                                    if ($hotel['parking']) {
-                                        echo 'Yes';
-                                    } else {
-                                        echo 'No';
-                                    }
-                                    ?>
-                                </p>
-                            </td>
-                            <td>
-                                <p><?php echo $hotel['vote']; ?></p>
-                            </td>
-                            <td>
-                                <p><?php echo $hotel['distance_to_center']; ?> km</p>
-                            </td>
-                        </tr>
+                            <tr>
+                                <td>
+                                    <p><?php echo $hotel['name']; ?></p>
+                                </td>
+                                <td>
+                                    <p><?php echo $hotel['description']; ?></p>
+                                </td>
+                                <td>
+                                    <p>
+                                        <?php
+                                        if ($hotel['parking']) {
+                                            echo 'Yes';
+                                        } else {
+                                            echo 'No';
+                                        }
+                                        ?>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p><?php echo $hotel['vote']; ?></p>
+                                </td>
+                                <td>
+                                    <p><?php echo $hotel['distance_to_center']; ?> km</p>
+                                </td>
+                            </tr>
                         <?php } ?>
                     </tbody>
                 </table>
